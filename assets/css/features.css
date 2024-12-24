@@ -1,0 +1,206 @@
+/* ----------------------------------------
+   Features Section Styles
+---------------------------------------- */
+
+/* Wrapper for Features Section */
+.wrapper.style2 {
+  background: #282b34 url("images/overlay.png");
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for modern look */
+  padding: 4em 2em 6em;
+  margin: 0 auto;
+  /* max-width: 1200px; Centralized content */
+}
+
+/* Title Styling for Wrapper 2 */
+.wrapper.style2 .title {
+  position: absolute;
+  top: -3em;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  font-size: 1em;
+  background: inherit;
+  color: #fff;
+  z-index: 10;
+}
+
+/* Decorative Elements for Wrapper 2 Title */
+.wrapper.style2 .title:before,
+.wrapper.style2 .title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 10px;
+  height: 10px;
+  background: #282b34 url("images/overlay.png");
+  transform: rotate(45deg);
+}
+
+.wrapper.style2 .title:before {
+  left: -5px;
+}
+
+.wrapper.style2 .title:after {
+  right: -5px;
+}
+
+.wrapper.style2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center; /* Center-align the content */
+}
+
+.wrapper.style2 .feature-box {
+  flex: 1 1 calc(50% - 2em); /* Two items per row */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper.style2 .feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper.style2 .feature-box h3 {
+  font-size: 1.5em;
+  color: #e97770;
+  margin-bottom: 0.5em;
+}
+
+.wrapper.style2 .feature-box p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.wrapper.style2 .actions {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.wrapper.style2 .actions .button {
+  display: inline-block;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #e97770;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.wrapper.style2 .actions .button:hover {
+  background: #555;
+}
+
+/* Responsive Adjustments */
+
+/* Screens 426px and smaller (Includes 425px) */
+@media screen and (max-width: 426px) {
+  .wrapper.style2 {
+    padding: 3em 1em; /* Adjust padding for smaller screens */
+  }
+
+  .wrapper.style2 .feature-box {
+    flex: 1 1 100%; /* Stack boxes vertically */
+  }
+
+  .wrapper.style2 .title {
+    font-size: 0.7em; /* Smaller title font size */
+  }
+
+  .wrapper.style2 .feature-box h3 {
+    font-size: 1.2em; /* Smaller feature heading */
+  }
+
+  .wrapper.style2 .feature-box p {
+    font-size: 1em; /* Paragraph text size */
+  }
+}
+
+/* Screens between 427px and 768px */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  .wrapper.style2 .feature-box {
+    flex: 1 1 100%; /* Stack elements vertically */
+  }
+
+  .wrapper.style2 .title {
+    font-size: 1em;
+    top: -2.5em; /* Adjust position */
+  }
+
+  .wrapper.style2 .feature-box h3 {
+    font-size: 1.4em;
+  }
+
+  .wrapper.style2 .feature-box p {
+    font-size: 1.1em;
+  }
+}
+
+/* Screens between 1440px and 2559px */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .wrapper.style2 .container {
+    gap: 4em;
+  }
+
+  .wrapper.style2 {
+    padding: 6em 3em; /* Larger padding for wide screens */
+  }
+
+  .wrapper.style2 .feature-box {
+    padding: 3em; /* Increased padding */
+  }
+
+  .wrapper.style2 .title {
+    font-size: 1.7em;
+  }
+
+  .wrapper.style2 .feature-box h3 {
+    font-size: 1.8em;
+  }
+
+  .wrapper.style2 .feature-box p {
+    font-size: 1.2em;
+  }
+}
+
+/* Screens 2560px and above */
+@media screen and (min-width: 2560px) {
+  .wrapper.style2 .container {
+    gap: 4em;
+  }
+  .wrapper.style2 {
+    padding: 8em 4em; /* Extra padding for ultra-large screens */
+  }
+
+  .wrapper.style2 .feature-box {
+    padding: 4em;
+  }
+
+  .wrapper.style2 .title {
+    font-size: 2.5em; /* Prominent title size */
+    top: -3em;
+  }
+
+  .wrapper.style2 .feature-box h3 {
+    font-size: 2em;
+  }
+
+  .wrapper.style2 .feature-box p {
+    font-size: 1.3em;
+    line-height: 1.8; /* Improve readability */
+  }
+}
