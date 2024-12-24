@@ -2,62 +2,9 @@
    Features Section Styles
 ---------------------------------------- */
 
-/* Wrapper for Features Section */
-.wrapper.style2 {
-  background: #282b34 url("images/overlay.png");
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for modern look */
-  padding: 4em 2em 6em;
-  margin: 0 auto;
-  /* max-width: 1200px; Centralized content */
-}
-
-/* Title Styling for Wrapper 2 */
-.wrapper.style2 .title {
-  position: absolute;
-  top: -3em;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  font-size: 1em;
-  background: inherit;
-  color: #fff;
-  z-index: 10;
-}
-
-/* Decorative Elements for Wrapper 2 Title */
-.wrapper.style2 .title:before,
-.wrapper.style2 .title:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 10px;
-  height: 10px;
-  background: #282b34 url("images/overlay.png");
-  transform: rotate(45deg);
-}
-
-.wrapper.style2 .title:before {
-  left: -5px;
-}
-
-.wrapper.style2 .title:after {
-  right: -5px;
-}
-
-.wrapper.style2 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center; /* Center-align the content */
-}
-
+/* Feature Boxes */
 .wrapper.style2 .feature-box {
-  flex: 1 1 calc(50% - 2em); /* Two items per row */
+  flex: 1 1 calc(50% - 2em);
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,11 +26,11 @@
 
 .wrapper.style2 .feature-box p {
   font-size: 1em;
-  color: #666;
+  color: #000;
   line-height: 1.6;
 }
 
-/* Button Styling */
+/* Buttons */
 .wrapper.style2 .actions {
   text-align: center;
   margin-top: 2em;
@@ -107,100 +54,122 @@
 
 /* Responsive Adjustments */
 
-/* Screens 426px and smaller (Includes 425px) */
+/* Responsive Adjustments */
+
+/* Screens 426px and smaller */
 @media screen and (max-width: 426px) {
   .wrapper.style2 {
     padding: 3em 1em; /* Adjust padding for smaller screens */
   }
 
+  .wrapper.style2 .container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align each feature box */
+  }
+
   .wrapper.style2 .feature-box {
-    flex: 1 1 100%; /* Stack boxes vertically */
+    flex: 1 1 100%; /* Full-width boxes */
+    margin-bottom: 1.5em; /* Add spacing between boxes */
   }
 
   .wrapper.style2 .title {
     font-size: 0.7em; /* Smaller title font size */
+    top: -2.5em; /* Adjust positioning */
   }
 
   .wrapper.style2 .feature-box h3 {
-    font-size: 1.2em; /* Smaller feature heading */
+    font-size: 1.2em; /* Scale heading size */
   }
 
   .wrapper.style2 .feature-box p {
-    font-size: 1em; /* Paragraph text size */
+    font-size: 0.9em; /* Scale paragraph size */
+  }
+
+  .wrapper.style2 .actions .button {
+    padding: 0.6em 1em; /* Smaller button padding */
   }
 }
 
-/* Screens between 427px and 768px */
+/* Screens 427px to 768px */
 @media screen and (min-width: 427px) and (max-width: 768px) {
+  .wrapper.style2 {
+    padding: 4em 2em; /* Adjust padding */
+  }
+
+  .wrapper.style2 .container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align each feature box */
+  }
+
   .wrapper.style2 .feature-box {
-    flex: 1 1 100%; /* Stack elements vertically */
+    flex: 1 1 calc(100% - 2em); /* Stack boxes vertically */
+    margin-bottom: 1.5em; /* Add spacing between boxes */
   }
 
   .wrapper.style2 .title {
-    font-size: 1em;
-    top: -2.5em; /* Adjust position */
+    font-size: 1em; /* Medium title size */
+    top: -3em; /* Adjust positioning */
   }
 
   .wrapper.style2 .feature-box h3 {
-    font-size: 1.4em;
+    font-size: 1.4em; /* Medium heading size */
   }
 
   .wrapper.style2 .feature-box p {
-    font-size: 1.1em;
+    font-size: 1em; /* Medium paragraph size */
+  }
+
+  .wrapper.style2 .actions .button {
+    padding: 0.6em 1.5em; /* Adjust button padding */
   }
 }
 
-/* Screens between 1440px and 2559px */
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .wrapper.style2 .container {
-    gap: 4em;
-  }
-
+/* Screens 1440px and wider */
+@media screen and (min-width: 1440px) {
   .wrapper.style2 {
     padding: 6em 3em; /* Larger padding for wide screens */
   }
 
   .wrapper.style2 .feature-box {
-    padding: 3em; /* Increased padding */
+    padding: 3em; /* Larger box padding */
   }
 
   .wrapper.style2 .title {
-    font-size: 1.7em;
+    font-size: 1.7em; /* Larger title size */
   }
 
   .wrapper.style2 .feature-box h3 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Larger heading size */
   }
 
   .wrapper.style2 .feature-box p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Larger paragraph size */
   }
 }
 
-/* Screens 2560px and above */
+/* Screens 2560px and wider */
 @media screen and (min-width: 2560px) {
-  .wrapper.style2 .container {
-    gap: 4em;
-  }
   .wrapper.style2 {
     padding: 8em 4em; /* Extra padding for ultra-large screens */
   }
 
   .wrapper.style2 .feature-box {
-    padding: 4em;
+    padding: 4em; /* Extra box padding */
   }
 
   .wrapper.style2 .title {
-    font-size: 2.5em; /* Prominent title size */
+    font-size: 2.5em; /* Extra large title size */
     top: -3em;
   }
 
   .wrapper.style2 .feature-box h3 {
-    font-size: 2em;
+    font-size: 2em; /* Extra large heading size */
   }
 
   .wrapper.style2 .feature-box p {
-    font-size: 1.3em;
+    font-size: 1.3em; /* Extra large paragraph size */
     line-height: 1.8; /* Improve readability */
   }
 }

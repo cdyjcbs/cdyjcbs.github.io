@@ -14,7 +14,7 @@
   letter-spacing: 0.25em;
   font-size: 1em;
   background: inherit; /* Match section background */
-  color: #484d55; /* Ensure readability */
+  color: #000; /* Ensure readability */
   z-index: 10;
 }
 
@@ -73,14 +73,14 @@
 #about .text-content h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  color: #333;
+  color: #e97770;
   text-align: center;
 }
 
 #about .text-content p {
   line-height: 1.6;
   font-size: 1.1em;
-  color: #666;
+  color: #000;
 }
 
 /* Responsive Adjustments */
