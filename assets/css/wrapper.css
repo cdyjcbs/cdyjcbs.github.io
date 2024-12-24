@@ -182,7 +182,7 @@
 /* Large Screens (min-width: 1440px) */
 @media screen and (min-width: 1440px) {
   .wrapper.style2 {
-    padding: 6em 3em 6em;
+    padding: 3em 3em 6em;
   }
 
   .wrapper.style2 .title {
@@ -202,7 +202,7 @@
 /* 4K Ultra HD Screens (min-width: 2560px) */
 @media screen and (min-width: 2560px) {
   .wrapper.style2 {
-    padding: 8em 4em 6em;
+    padding: 4em 4em 6em;
   }
 
   .wrapper.style2 .title {

@@ -1,0 +1,201 @@
+/* ----------------------------------------
+   Footer Section Styles
+---------------------------------------- */
+
+/* Footer Wrapper */
+.wrapper.style2.footer-section {
+  display: flex;
+  flex-direction: column; /* Default: stack vertically */
+  align-items: center; /* Center align items */
+  justify-content: flex-start; /* Top-align items */
+  padding: 1em 1.5em !important; /* Override padding from wrapper.css */
+  background: #282b34; /* Footer-specific background */
+  color: #fff; /* Footer-specific text color */
+  border-radius: 0; /* Remove inherited border radius */
+}
+
+/* Footer Container */
+.wrapper.style2.footer-section .container {
+  display: flex;
+  flex-direction: column; /* Default: stack vertically */
+  gap: 2em; /* Add spacing between elements */
+  width: 100%;
+}
+
+/* Title */
+.wrapper.style2.footer-section .title {
+  font-size: 1em; /* Scalable text size */
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header Styles in Footer */
+.wrapper.style2.footer-section header.style1 {
+  flex: 1; /* Allow text to occupy available space */
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.wrapper.style2.footer-section header.style1 h2 {
+  font-size: clamp(1.2em, 2.8vw, 1.5em); /* Scalable text size */
+  margin-bottom: 0.5em;
+  color: #e97770;
+  text-align: center;
+}
+
+.wrapper.style2.footer-section header.style1 p {
+  font-size: clamp(0.9em, 2vw, 1em); /* Scalable text size */
+  color: #fff;
+  text-align: center;
+}
+
+/* Contact Form */
+.wrapper.style2.footer-section #contact-form {
+  flex: 1; /* Allow form to occupy available space */
+  margin: 0 auto;
+  max-width: 100%; /* Allow form to fill available space */
+  text-align: left;
+}
+
+.wrapper.style2.footer-section #contact-form h1 {
+  font-size: clamp(1.5em, 3vw, 2em); /* Scalable text size */
+  margin-bottom: 0.5em;
+  color: #e97770;
+  text-align: center;
+}
+
+.wrapper.style2.footer-section #contact-form iframe {
+  width: 100%; /* Ensure iframe fills available width */
+  border: none;
+}
+
+/* Copyright Section */
+.wrapper.style2.footer-section #copyright {
+  margin-top: 2em;
+  font-size: clamp(0.8em, 1.8vw, 0.9em); /* Scalable text size */
+  color: #aaa;
+  text-align: center;
+}
+
+.wrapper.style2.footer-section #copyright ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper.style2.footer-section #copyright ul li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+/* ----------------------------------------
+   Responsive Adjustments
+---------------------------------------- */
+
+/* Screens 426px and smaller */
+@media screen and (max-width: 426px) {
+  .wrapper.style2.footer-section {
+    padding: 3em 1em !important;
+  }
+
+  .wrapper.style2.footer-section .title {
+    font-size: 0.7em; /* Smaller title font size */
+  }
+
+  .wrapper.style2.footer-section header.style1 h2 {
+    font-size: 1em; /* Smaller subtitle size */
+  }
+
+  .wrapper.style2.footer-section header.style1 p {
+    font-size: 0.9em; /* Smaller paragraph size */
+  }
+}
+
+/* Screens 427px to 768px */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  .wrapper.style2.footer-section {
+    padding: 4em 2em;
+  }
+
+  .wrapper.style2.footer-section .title {
+    font-size: 1em; /* Medium title size */
+  }
+
+  .wrapper.style2.footer-section header.style1 h2 {
+    font-size: 1.2em; /* Medium subtitle size */
+  }
+
+  .wrapper.style2.footer-section header.style1 p {
+    font-size: 1em; /* Medium paragraph size */
+  }
+}
+
+/* Screens 769px and wider */
+@media screen and (min-width: 769px) {
+  .wrapper.style2.footer-section .container {
+    display: flex;
+    flex-direction: row; /* Switch to row layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute text and form */
+    gap: 2em;
+  }
+
+  .wrapper.style2.footer-section header.style1 {
+    flex: 1; /* Allow text to occupy available space */
+    text-align: left; /* Left-align text */
+  }
+
+  .wrapper.style2.footer-section #contact-form {
+    flex: 1; /* Allow form to occupy available space */
+    max-width: 600px; /* Set a reasonable max-width */
+    text-align: right; /* Align the form to the right */
+  }
+}
+
+/* Screens 1440px and wider */
+@media screen and (min-width: 1440px) {
+  .wrapper.style2.footer-section {
+    padding: 6em 3em;
+  }
+
+  .wrapper.style2.footer-section .title {
+    font-size: 1.7em; /* Larger title size */
+  }
+
+  .wrapper.style2.footer-section header.style1 h2 {
+    font-size: 2em; /* Larger subtitle size */
+  }
+
+  .wrapper.style2.footer-section header.style1 p {
+    font-size: 1.2em; /* Larger paragraph size */
+  }
+}
+
+/* Screens 2560px and wider */
+@media screen and (min-width: 2560px) {
+  .wrapper.style2.footer-section {
+    padding: 8em 4em;
+  }
+
+  .wrapper.style2.footer-section .title {
+    font-size: 2.5em; /* Extra large title size */
+  }
+
+  .wrapper.style2.footer-section header.style1 h2 {
+    font-size: 1.8em; /* Extra large subtitle size */
+  }
+
+  .wrapper.style2.footer-section header.style1 p {
+    font-size: 1.3em; /* Extra large paragraph size */
+  }
+
+  .wrapper.style2.footer-section #contact-form h1 {
+    font-size: clamp(2em, 4vw, 2.5em); /* Extra large form title */
+  }
+
+  .wrapper.style2.footer-section #contact-form {
+    max-width: 800px; /* Wider form for large screens */
+  }
+}
