@@ -1,0 +1,147 @@
+/* ----------------------------------------
+   Student Portal Styles
+---------------------------------------- */
+
+/* Portal Section */
+#portal {
+  padding: 2em 1em !important; /* Reduce padding specifically for portal */
+}
+
+/* Title Styling */
+#portal .title {
+  position: absolute;
+  top: -3em; /* Overlap the section below */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  font-size: 1em; /* Match about.css for base size */
+  background: inherit; /* Match section background */
+  color: #000; /* Ensure readability */
+  z-index: 10;
+}
+
+#portal .title:before,
+#portal .title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 10px;
+  height: 10px;
+  background: inherit; /* Match section background */
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#portal .title:before {
+  left: -5px;
+}
+
+#portal .title:after {
+  right: -5px;
+}
+
+/* Portal Content Wrapper */
+#portal .container {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align text and form at the top */
+  align-items: center;
+  gap: 2em;
+  background: inherit;
+}
+
+/* Text Content Styling */
+#portal p {
+  font-size: 1.1em; /* Match about.css for base size */
+  line-height: 1.6;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Portal Script Container */
+#portal #portal-content {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+
+/* Screens 426px and smaller */
+@media screen and (max-width: 426px) {
+  #portal {
+    padding: 1.5em 1em !important; /* Further reduce padding for small screens */
+  }
+
+  #portal .container {
+    padding: 0;
+  }
+
+  #portal p {
+    font-size: 1em; /* Match about.css for small screens */
+  }
+
+  #portal .title {
+    font-size: 0.7em; /* Match about.css for small screens */
+    top: -2.5em;
+  }
+}
+
+/* Screens 427px to 768px */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  #portal {
+    padding: 2em 1.5em !important;
+  }
+
+  #portal p {
+    font-size: 1em; /* Match about.css for medium screens */
+  }
+
+  #portal .title {
+    font-size: 0.9em; /* Match about.css for medium screens */
+    top: -2.5em;
+  }
+}
+
+/* Screens 1440px and wider */
+@media screen and (min-width: 1440px) {
+  #portal {
+    padding: 3em 2em !important;
+  }
+
+  #portal .container {
+    padding: 0;
+  }
+
+  #portal p {
+    font-size: 1.3em; /* Match about.css for large screens */
+  }
+
+  #portal .title {
+    font-size: 1.7em; /* Match about.css for large screens */
+    top: -3em;
+  }
+}
+
+/* Screens 2560px and above */
+@media screen and (min-width: 2560px) {
+  #portal {
+    padding: 4em 3em !important;
+  }
+
+  #portal .title {
+    font-size: 2.5em; /* Match about.css for ultra-large screens */
+    top: -3em;
+  }
+
+  #portal p {
+    font-size: 2em; /* Match about.css for ultra-large screens */
+  }
+}

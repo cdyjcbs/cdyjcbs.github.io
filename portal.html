@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal - Cody Jacobs Vocal Studio</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/wrapper.css" />
+    <link rel="stylesheet" href="assets/css/portal.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Header -->
+      <section id="header" class="wrapper">
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Voice Lessons</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li class="current">
+              <a href="portal.html">Student Portal</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Title Bar for Small Screens -->
+        <div id="titleBar">
+          <span class="toggle">☰</span>
+        </div>
+
+        <!-- Navigation Panel for Small Screens -->
+        <div id="navPanel">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Voice Lessons</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li class="current">
+              <a href="portal.html">Student Portal</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Logo -->
+        <div id="logo">
+          <div class="overlay-text">
+            <h1>Cody Jacobs Vocal Studio</h1>
+          </div>
+          <img
+            src="images/20240422-DSC04618-2.jpg"
+            alt="Cody Jacobs Vocal Studio Image"
+            class="header-image"
+          />
+        </div>
+      </section>
+
+      <!-- Student Portal Section -->
+      <section id="portal" class="wrapper style1">
+        <div class="title">Student Portal</div>
+        <div class="container">
+          <p>
+            Welcome to the Student Portal. Access your tools and resources
+            below:
+          </p>
+          <div id="portal-content">
+            <!-- Add your portal script or widget here -->
+            <script src="https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9mdDFKQyIsIldlYnNpdGVJRCI6Indic181MjJKNyIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3htTlpKcSJ9"></script>
+          </div>
+          <p>
+            If you are a current or prospective student that needs access to the
+            Student Portal, you can sign up <a href="signup.html">here</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section id="footer" class="wrapper style2 footer-section">
+        <div id="copyright">
+          <ul>
+            <li>&copy; Cody Jacobs Voice Studio 2025.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      const body = document.querySelector("body");
+      const titleBarToggle = document.querySelector("#titleBar .toggle");
+      const navPanel = document.querySelector("#navPanel");
+
+      // Add a click event listener to the toggle button
+      titleBarToggle.addEventListener("click", () => {
+        body.classList.toggle("navPanel-visible");
+      });
+    </script>
+  </body>
+</html>

@@ -30,10 +30,19 @@
   line-height: 1.6;
 }
 
+/* H2 Section Below Feature Boxes */
+.wrapper.style2 h2 {
+  text-align: center;
+  padding: 1em; /* Padding around the H2 text */
+  font-size: clamp(1.2em, 2.5vw, 2em); /* Scalable font size */
+  color: #fff; /* Text color */
+  line-height: 1.4; /* Adjust line height for readability */
+}
+
 /* Buttons */
 .wrapper.style2 .actions {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .wrapper.style2 .actions .button {
@@ -51,8 +60,6 @@
 .wrapper.style2 .actions .button:hover {
   background: #555;
 }
-
-/* Responsive Adjustments */
 
 /* Responsive Adjustments */
 
@@ -84,6 +91,10 @@
 
   .wrapper.style2 .feature-box p {
     font-size: 0.9em; /* Scale paragraph size */
+  }
+
+  .wrapper.style2 h2 {
+    font-size: clamp(1em, 2vw, 1.5em); /* Smaller H2 text size */
   }
 
   .wrapper.style2 .actions .button {
@@ -121,6 +132,10 @@
     font-size: 1em; /* Medium paragraph size */
   }
 
+  .wrapper.style2 h2 {
+    font-size: clamp(1.2em, 2.2vw, 1.8em); /* Medium H2 text size */
+  }
+
   .wrapper.style2 .actions .button {
     padding: 0.6em 1.5em; /* Adjust button padding */
   }
@@ -147,6 +162,10 @@
   .wrapper.style2 .feature-box p {
     font-size: 1.2em; /* Larger paragraph size */
   }
+
+  .wrapper.style2 h2 {
+    font-size: clamp(1.5em, 2.8vw, 2em); /* Larger H2 text size */
+  }
 }
 
 /* Screens 2560px and wider */
@@ -171,5 +190,9 @@
   .wrapper.style2 .feature-box p {
     font-size: 1.3em; /* Extra large paragraph size */
     line-height: 1.8; /* Improve readability */
+  }
+
+  .wrapper.style2 h2 {
+    font-size: clamp(1.8em, 3vw, 2.5em); /* Extra large H2 text size */
   }
 }

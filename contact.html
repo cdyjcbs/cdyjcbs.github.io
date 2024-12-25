@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Cody Jacobs Vocal Studio</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/wrapper.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Header -->
+      <section id="header" class="wrapper">
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Voice Lessons</a></li>
+            <li><a href="index.html">Testimonials</a></li>
+            <li><a href="portal.html">Student Portal</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Title Bar for Small Screens -->
+        <div id="titleBar">
+          <span class="toggle">☰</span>
+        </div>
+
+        <!-- Navigation Panel for Small Screens -->
+        <div id="navPanel">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Voice Lessons</a></li>
+            <li><a href="index.html.html">Testimonials</a></li>
+            <li><a href="portal.html">Student Portal</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Logo -->
+        <div id="logo">
+          <div class="overlay-text">
+            <h1>Cody Jacobs Vocal Studio</h1>
+          </div>
+          <img
+            src="images/20240422-DSC04618-2.jpg"
+            alt="Cody Jacobs Vocal Studio Image"
+            class="header-image"
+          />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="wrapper style2">
+        <div class="title">Contact Me</div>
+        <div class="container">
+          <header class="style1">
+            <h2>Fill out the contact form or email me directly at:</h2>
+            <p>
+              <a href="mailto:cody@codyjacobsvoice.com"
+                >cody@codyjacobsvoice.com</a
+              >
+            </p>
+          </header>
+
+          <!-- Contact Form -->
+          <section id="contact-form">
+            <script src="https://app.mymusicstaff.com/Widget/v4/Widget.ashx?settings=eyJTY2hvb2xJRCI6InNjaF9mdDFKQyIsIldlYnNpdGVJRCI6Indic181MjJKNyIsIldlYnNpdGVCbG9ja0lEIjoid2JiX3htTjBKVCJ9"></script>
+          </section>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="wrapper style2 footer-section">
+        <div id="copyright">
+          <ul>
+            <li>&copy; Cody Jacobs Vocal Studio 2025.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      const body = document.querySelector("body");
+      const titleBarToggle = document.querySelector("#titleBar .toggle");
+      const navPanel = document.querySelector("#navPanel");
+
+      // Add a click event listener to the toggle button
+      titleBarToggle.addEventListener("click", () => {
+        body.classList.toggle("navPanel-visible");
+      });
+    </script>
+  </body>
+</html>

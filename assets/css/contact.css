@@ -1,0 +1,188 @@
+/* ----------------------------------------
+   Contact Page Styles
+---------------------------------------- */
+
+/* Contact Section */
+#contact {
+  position: relative;
+  padding: 4em 2em;
+  background: #f9f9f9 url("images/background.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Title Styling */
+#contact .title {
+  position: absolute;
+  top: -3em; /* Overlap the section below */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  font-size: 1em; /* Match about.css for base size */
+  color: #e97770; /* Accent color */
+  z-index: 10;
+}
+
+#contact .title:before,
+#contact .title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#contact .title:before {
+  left: -5px;
+}
+
+#contact .title:after {
+  right: -5px;
+}
+
+/* Header Styling */
+#contact header.style1 {
+  margin-bottom: 2em;
+}
+
+#contact header.style1 h2 {
+  font-size: 2em; /* Match about.css */
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+#contact header.style1 p {
+  font-size: 1.1em; /* Match about.css */
+  color: #666;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Contact Form */
+#contact-form {
+  margin: 0 auto;
+  max-width: 900px; /* Align with portal.css */
+  text-align: center;
+  width: 100%;
+}
+
+#contact-form iframe {
+  width: 100%;
+  height: 600px; /* Ensure the form scales consistently */
+  border: none;
+}
+
+/* Responsive Adjustments */
+
+/* Screens 426px and smaller */
+@media screen and (max-width: 426px) {
+  #contact {
+    padding: 3em 1em;
+  }
+
+  #contact .title {
+    font-size: 0.7em; /* Match about.css for small screens */
+    top: -2.5em;
+  }
+
+  #contact header.style1 h2 {
+    font-size: 1.5em; /* Match about.css */
+  }
+
+  #contact header.style1 p {
+    font-size: 1em; /* Match about.css */
+  }
+
+  #contact-form {
+    max-width: 100%; /* Full-width on small screens */
+  }
+
+  #contact-form iframe {
+    height: 500px; /* Adjust form height for small screens */
+  }
+}
+
+/* Screens between 427px and 768px */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  #contact {
+    padding: 4em 1.5em;
+  }
+
+  #contact .title {
+    font-size: 0.9em; /* Match about.css for medium screens */
+    top: -2.5em;
+  }
+
+  #contact header.style1 h2 {
+    font-size: 1.8em; /* Match about.css */
+  }
+
+  #contact header.style1 p {
+    font-size: 1em; /* Match about.css */
+  }
+
+  #contact-form {
+    max-width: 100%; /* Allow form to scale */
+  }
+
+  #contact-form iframe {
+    height: 550px; /* Adjust form height */
+  }
+}
+
+/* Screens 1440px and wider */
+@media screen and (min-width: 1440px) {
+  #contact {
+    padding: 6em 3em;
+  }
+
+  #contact .title {
+    font-size: 1.7em; /* Match about.css for large screens */
+  }
+
+  #contact header.style1 h2 {
+    font-size: 3em; /* Match about.css */
+  }
+
+  #contact header.style1 p {
+    font-size: 1.3em; /* Match about.css */
+  }
+
+  #contact-form {
+    max-width: 900px; /* Align with portal.css */
+  }
+
+  #contact-form iframe {
+    height: 600px; /* Default form height */
+  }
+}
+
+/* Screens 2560px and above */
+@media screen and (min-width: 2560px) {
+  #contact {
+    padding: 8em 4em;
+  }
+
+  #contact .title {
+    font-size: 2.5em; /* Match about.css for ultra-large screens */
+  }
+
+  #contact header.style1 h2 {
+    font-size: 5em; /* Match about.css */
+  }
+
+  #contact header.style1 p {
+    font-size: 2em; /* Match about.css */
+  }
+
+  #contact-form iframe {
+    height: 800px; /* Larger form height for ultra-wide screens */
+  }
+}
