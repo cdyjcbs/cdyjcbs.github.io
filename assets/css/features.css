@@ -34,7 +34,7 @@
 .wrapper.style2 h2 {
   text-align: center;
   padding: 1em; /* Padding around the H2 text */
-  font-size: clamp(1.2em, 2.5vw, 2em); /* Scalable font size */
+  font-size: 1.5em; /* Scalable font size */
   color: #fff; /* Text color */
   line-height: 1.4; /* Adjust line height for readability */
 }

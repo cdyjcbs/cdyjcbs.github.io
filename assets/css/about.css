@@ -47,7 +47,7 @@
   justify-content: space-between; /* Space out elements horizontally */
   align-items: center; /* Align items vertically */
   gap: 0em; /* Space between image and text */
-  /* padding: 4em 2em; Space around content */
+  padding-bottom: 2em;
   background: inherit; /* Section background */
 }
 
@@ -67,7 +67,6 @@
 #about .text-content {
   flex: 1 1 50%; /* Take up 50% of the width */
   text-align: left;
-  /* padding-left: 1.5em; Add padding to the left for side-by-side view */
 }
 
 #about .text-content h2 {
