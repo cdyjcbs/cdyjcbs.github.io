@@ -47,7 +47,7 @@
   justify-content: space-between; /* Space out elements horizontally */
   align-items: center; /* Align items vertically */
   gap: 0em; /* Space between image and text */
-  padding: 4em 2em; /* Space around content */
+  /* padding: 4em 2em; Space around content */
   background: inherit; /* Section background */
 }
 

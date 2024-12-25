@@ -22,7 +22,7 @@
   font-weight: 700;
   letter-spacing: 0.25em;
   font-size: 1em; /* Match about.css for base size */
-  color: #e97770; /* Accent color */
+  color: #000; /* Accent color */
   z-index: 10;
 }
 
