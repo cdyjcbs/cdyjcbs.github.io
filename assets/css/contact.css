@@ -6,7 +6,7 @@
 #contact {
   position: relative;
   padding: 4em 2em;
-  background: #f9f9f9 url("images/background.jpg") no-repeat center center;
+  background: #f3f3f3 url("images/overlay.png");
   background-size: cover;
   text-align: center;
 }
