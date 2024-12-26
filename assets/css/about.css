@@ -83,6 +83,28 @@
   text-indent: 1em;
 }
 
+/* Grid Container for 2x2 Images */
+#about .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1em; /* Space between images */
+  margin-top: 2em; /* Add space above the grid */
+}
+
+#about .grid-container img {
+  width: 100%; /* Ensure images fill their grid cells */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #about .grid-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
+
 /* Responsive Adjustments */
 
 /* Screens 426px and smaller (Includes 425px) */
