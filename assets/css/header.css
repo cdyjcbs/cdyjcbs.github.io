@@ -138,7 +138,7 @@ body.navPanel-visible #navPanel {
   color: #fff;
   font-size: clamp(2em, 5vw, 3em);
   font-weight: bold;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 3px #e97770;
   white-space: pre-wrap;
   text-align: center;
   line-height: 1.4;
@@ -156,7 +156,7 @@ body.navPanel-visible #navPanel {
 /* Screens 426px and smaller */
 @media screen and (max-width: 426px) {
   #logo .overlay-text {
-    font-size: clamp(1.2em, 3.5vw, 2em);
+    font-size: clamp(1.4em, 3.5vw, 2.2em);
     max-width: 90%; /* Constrain width for wrapping */
     line-height: 1.2; /* Adjust line spacing */
   }
