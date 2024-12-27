@@ -6,8 +6,7 @@
 #contact {
   position: relative;
   padding: 4em 2em;
-  background: #f3f3f3 url("images/overlay.png");
-  background-size: cover;
+  background: #f3f3f3 url("images/binding-dark.png");
   text-align: center;
 }
 
@@ -23,6 +22,7 @@
   letter-spacing: 0.25em;
   font-size: 1em; /* Match about.css for base size */
   color: #000; /* Accent color */
+  background: inherit;
   z-index: 10;
 }
 

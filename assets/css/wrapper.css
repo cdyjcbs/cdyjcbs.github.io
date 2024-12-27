@@ -49,7 +49,7 @@
 
 /* Wrapper Style 1 */
 .wrapper.style1 {
-  background: #f3f3f3 url("images/overlay.png");
+  background: #f3f3f3 url("images/binding-dark.png");
   color: #484d55;
   display: flex;
   flex-wrap: nowrap;
@@ -91,7 +91,7 @@
 
 /* Wrapper Style 2 (Features Section) */
 .wrapper.style2 {
-  background: #282b34 url("images/overlay.png");
+  background: #282b34 url("images/asfalt-light.png");
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

@@ -9,7 +9,7 @@
   align-items: center; /* Center align items */
   justify-content: flex-start; /* Top-align items */
   padding: 1em 1.5em !important; /* Override padding from wrapper.css */
-  background: #282b34; /* Footer-specific background */
+  background: #282b34 url("images/asfalt-light.png"); /* Footer-specific background */
   color: #fff; /* Footer-specific text color */
   border-radius: 0; /* Remove inherited border radius */
 }

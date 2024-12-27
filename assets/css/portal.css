@@ -18,7 +18,7 @@
   font-weight: 700;
   letter-spacing: 0.25em;
   font-size: 1em; /* Match about.css for base size */
-  background: #f3f3f3 url("images/overlay.png"); /* Match section background */
+  background: inherit; /* Match section background */
   color: #000; /* Ensure readability */
   z-index: 10;
 }
