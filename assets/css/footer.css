@@ -28,7 +28,8 @@
   font-size: 1em; /* Scalable text size */
   text-transform: uppercase;
   margin-bottom: 1em;
-  color: #fff;
+  /* color: #fff; */
+  color: #cd533b;
   text-align: center;
 }
 
@@ -41,7 +42,8 @@
 
 .wrapper.style2.footer-section header.style1 h2 {
   font-size: 1.5em; /* Scalable text size */
-  color: #e97770;
+  /* color: #e97770; */
+  color: #cd533b;
   text-align: center;
 }
 

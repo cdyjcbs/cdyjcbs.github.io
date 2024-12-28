@@ -31,26 +31,28 @@ p {
 
 /* General Link Styling */
 a {
-  color: #04ace5; /* Default link color */
+  color: #1982c4; /* Default link color */
   text-decoration: none; /* Remove underline by default */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Link Hover State */
 a:hover {
-  color: #ff5a5a; /* Hover color */
+  /* color: #ff5a5a; Hover color */
+  color: #fff;
   text-decoration: underline; /* Add underline on hover */
 }
 
 /* Link Focus State (for accessibility) */
 a:focus {
-  outline: 2px solid #ff5a5a; /* Outline for focused links */
+  outline: 2px solid #cd533b; /* Outline for focused links */
+  color: #fff;
   outline-offset: 2px;
 }
 
 /* Visited Links */
 a:visited {
-  color: #03508f; /* Color for visited links */
+  color: #1982c4; /* Color for visited links */
 }
 
 /* General Container */

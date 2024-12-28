@@ -19,7 +19,8 @@
   letter-spacing: 0.25em;
   font-size: 1em; /* Match about.css for base size */
   background: inherit; /* Match section background */
-  color: #000; /* Ensure readability */
+  /* color: #000; Ensure readability */
+  color: #0a2463;
   z-index: 10;
 }
 
@@ -58,7 +59,8 @@
 #portal p {
   font-size: 1.1em; /* Match about.css for base size */
   line-height: 1.6;
-  color: #000;
+  /* color: #000; */
+  color: #0a2463;
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
@@ -70,6 +72,12 @@
   width: 100%;
   max-width: 900px;
   text-align: center;
+}
+
+#portal a:hover {
+  /* color: #ff5a5a; Hover color */
+  color: #0a2463;
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Responsive Adjustments */

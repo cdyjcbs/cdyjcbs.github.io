@@ -110,7 +110,9 @@
   letter-spacing: 0.25em;
   font-size: 1em;
   background: inherit;
-  color: #fff;
+  /* color: #fff; */
+  /* color: #1982c4; */
+  color: #cd533b;
   z-index: 10;
 }
 

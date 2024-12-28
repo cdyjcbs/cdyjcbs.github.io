@@ -21,7 +21,8 @@
   font-weight: 700;
   letter-spacing: 0.25em;
   font-size: 1em; /* Match about.css for base size */
-  color: #000; /* Accent color */
+  /* color: #000; Accent color */
+  color: #0a2463;
   background: inherit;
   z-index: 10;
 }
@@ -53,16 +54,24 @@
 
 #contact header.style1 h2 {
   font-size: 2em; /* Match about.css */
-  color: #333;
+  /* color: #333; */
+  color: #0a2463;
   line-height: 1.4;
   margin-bottom: 0.5em;
 }
 
 #contact header.style1 p {
   font-size: 1.1em; /* Match about.css */
-  color: #666;
+  /* color: #666; */
+  color: #0a2463;
   margin: 0 auto;
   max-width: 800px;
+}
+
+#contact a:hover {
+  /* color: #ff5a5a; Hover color */
+  color: #0a2463;
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Contact Form */

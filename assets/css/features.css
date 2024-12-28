@@ -20,13 +20,15 @@
 
 .wrapper.style2 .feature-box h3 {
   font-size: 1.5em;
-  color: #e97770;
+  /* color: #e97770; */
+  color: #cd533b;
   margin-bottom: 0.5em;
 }
 
 .wrapper.style2 .feature-box p {
   font-size: 1em;
-  color: #000;
+  /* color: #000; */
+  color: #0a2463;
   line-height: 1.6;
 }
 
@@ -35,7 +37,9 @@
   text-align: center;
   padding: 1em; /* Padding around the H2 text */
   font-size: 1.5em; /* Scalable font size */
-  color: #fff; /* Text color */
+  /* color: #fff; Text color */
+  /* color: #1982c4; */
+  color: #cd533b;
   line-height: 1.4; /* Adjust line height for readability */
 }
 
@@ -50,8 +54,10 @@
   padding: 0.8em 2em;
   text-transform: uppercase;
   font-weight: 700;
-  background: #e97770;
+  /* background: #e97770; */
+  background: #cd533b;
   color: #fff;
+  /* color: #1982c4; */
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
